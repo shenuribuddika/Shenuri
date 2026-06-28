@@ -46,7 +46,7 @@ p{
 
 .nav-links a{
     text-decoration:none;
-    color:white;
+    color:rgb(243, 239, 239);
     transition:0.3s;
 }
 
@@ -54,6 +54,24 @@ p{
     color:#06b6d4;
 }
 
+button,
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background: #8b5cf6;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+button:hover,
+.btn:hover {
+    background: #8b5cf6;
+    transform: translateY(-3px);
+}
 .hero{
     min-height:100vh;
     display:flex;
@@ -143,6 +161,75 @@ footer{
     padding:25px;
     background:#111827;
 }
+
+body.dark-mode{
+    background:#eef7ff;
+    color:#111827;
+}
+
+body.dark-mode .navbar{
+    background:rgba(255,255,255,0.95);
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+body.dark-mode .logo{
+    color:#2563eb;
+}
+
+body.dark-mode .nav-links a{
+    color:#111827;
+}
+
+body.dark-mode .nav-links a:hover{
+    color:#2563eb;
+}
+
+body.dark-mode .hero{
+    background:linear-gradient(135deg,#e0f2fe,#bfdbfe,#dbeafe);
+}
+
+body.dark-mode .hero h1{
+    color:#111827;
+}
+
+body.dark-mode .hero h3{
+    color:#2563eb;
+}
+
+body.dark-mode .hero p{
+    color:#374151;
+}
+
+body.dark-mode h2{
+    color:#2563eb;
+}
+
+body.dark-mode .card,
+body.dark-mode .timeline-card,
+body.dark-mode .project-card{
+    background:#ffffff;
+    color:#111827;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+body.dark-mode .skill{
+    background:#2563eb;
+    color:white;
+}
+
+body.dark-mode .skill a{
+    color:white;
+}
+
+body.dark-mode .skill:hover{
+    background:#1d4ed8;
+}
+
+body.dark-mode footer{
+    background:#dbeafe;
+    color:#111827;
+}
+
 
 @media(max-width:768px){
 
