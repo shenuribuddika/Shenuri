@@ -54,7 +54,43 @@ p{
     color:#06b6d4;
 }
 
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+    background:linear-gradient(135deg,#0b1120,#1e1b4b);
+}
+
+.hero h1{
+    font-size:72px;
+    margin-bottom:10px;
+}
+
+.hero h3{
+    color:#06b6d4;
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    line-height:1.8;
+    color:#d1d5db;
+}
+
 @media(max-width:768px){
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .hero h3{
+        font-size:24px;
+    }
 
     .nav-links{
         display:none;
