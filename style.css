@@ -91,6 +91,19 @@ h2{
     margin-bottom:40px;
     color:#8b5cf6;
 }
+.card,
+.timeline-card,
+.project-card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+}
+
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
 
 @media(max-width:768px){
 
