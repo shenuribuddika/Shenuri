@@ -287,12 +287,17 @@ h2{
   gap: 20px;
 }
 
-.project-card {
-  transition: 0.3s;
+.project-card{
+    background:#1f2937;
+    padding:30px;
+    border-radius:20px;
+
+    transition: all .35s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-8px);
+.project-card:hover{
+    transform: translateY(-10px);
+    box-shadow:0 15px 35px rgba(139,92,246,.35);
 }
 
 footer {
@@ -395,8 +400,282 @@ body.dark-mode .about-card h4{
 body.dark-mode .about-card p{
     color:#4b5563;
 }
+body.dark-mode #contact{
 
-@media (max-width: 768px) {
+    background:#eef7ff;
+
+}
+
+body.dark-mode .contact-card{
+
+    background:white;
+    color:#111827;
+
+}
+
+body.dark-mode .contact-card h3{
+
+    color:#111827;
+
+}
+
+body.dark-mode .contact-card a{
+
+    color:#374151;
+
+}
+
+body.dark-mode .section-title p{
+
+    color:#4b5563;
+
+}
+body.dark-mode .contact-card:hover{
+
+    box-shadow:
+        0 12px 30px rgba(37,99,235,.25);
+
+    border-color:#8b5cf6;
+
+}
+
+/* CONTACT */
+
+#contact{
+
+    padding:100px 10%;
+    background:#0b1120;
+}
+
+.section-title{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.contact-badge{
+
+    display:inline-block;
+    padding:10px 25px;
+    border-radius:30px;
+    background:#8b5cf6;
+    color:white;
+    font-weight:600;
+    margin-bottom:20px;
+
+}
+
+.section-title h2{
+
+    font-size:45px;
+    margin:20px 0;
+
+}
+
+.section-title p{
+
+    color:#cbd5e1;
+    max-width:650px;
+    margin:auto;
+    line-height:1.8;
+
+}
+
+.contact-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+
+}
+
+.contact-card{
+
+    background:#1f2937;
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:all .4s ease;
+
+    cursor:pointer;
+     transform-style:preserve-3d;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.35),
+        0 0 20px rgba(139,92,246,.45);
+
+    border:1px solid #8b5cf6;
+
+    transform:perspective(900px)
+              rotateX(4deg)
+              rotateY(-4deg)
+              translateY(-10px);
+
+
+}
+
+.icon-box{
+
+    width:80px;
+    height:80px;
+
+    margin:auto;
+
+    border-radius:20px;
+
+    background:#8b5cf6;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:35px;
+
+    margin-bottom:25px;
+     transition:.4s;
+
+}
+
+.contact-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.contact-card a{
+
+    color:#d1d5db;
+    text-decoration:none;
+    transition:.3s;
+
+}
+
+
+.contact-card:hover .icon-box{
+
+    transform:rotate(10deg) scale(1.12);
+
+}
+
+/*================ FOOTER ================*/
+
+footer{
+
+    background:#111827;
+
+    padding:35px 20px;
+
+    text-align:center;
+
+}
+
+.footer-social{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-bottom:20px;
+
+}
+
+.footer-social a{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:#1f2937;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    font-size:24px;
+
+    transition:.35s;
+
+}
+
+.footer-social a:hover{
+
+    background:#8b5cf6;
+
+    transform:translateY(-6px);
+
+    box-shadow:0 0 20px rgba(139,92,246,.6);
+
+}
+
+footer p{
+
+    color:#cbd5e1;
+
+    font-size:16px;
+
+}
+
+footer strong{
+
+    color:#8b5cf6;
+
+}
+
+body.dark-mode footer{
+
+    background:white;
+
+    border-top:1px solid #d1d5db;
+
+}
+
+body.dark-mode footer p{
+
+    color:#374151;
+
+}
+
+body.dark-mode footer strong{
+
+    color:#8b5cf6;
+
+}
+
+body.dark-mode .footer-social a{
+
+    background:#8b5cf6;
+
+    color:white;
+
+}
+
+body.dark-mode .footer-social a:hover{
+
+    background:#8b5cf6;
+
+}
+
+@media (max-width: 900px) {
   .hero h1 {
     font-size: 45px;
   }
@@ -451,4 +730,10 @@ body.dark-mode .about-card p{
   .nav-links {
     display: none;
   }
+
+  .contact-grid{
+
+    grid-template-columns:1fr;
+
+}
 }
