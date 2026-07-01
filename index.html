@@ -8,8 +8,10 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <nav class="navbar">
@@ -54,21 +56,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
           <h3>Who I Am</h3>
 
           <p>
-            I am an Information Technology Undergraduate 
-            at the University of Sri Jayewardenepura with 
-            a passion for web development, programming, 
-            and modern technologies. I enjoy building 
-            responsive websites, solving problems, and 
-            continuously learning new skills.
-            </p>
-            <p>
-            With a strong foundation in both design 
-            and development, I bridge the gap between 
-            creative vision and technical execution. 
-            I'm currently exploring full-stack 
-            development and Devops technologies.
-            </p>
-          
+            I am an Information Technology Undergraduate at the University of
+            Sri Jayewardenepura with a passion for web development, programming,
+            and modern technologies. I enjoy building responsive websites,
+            solving problems, and continuously learning new skills.
+          </p>
+          <p>
+            With a strong foundation in both design and development, I bridge
+            the gap between creative vision and technical execution. I'm
+            currently exploring full-stack development and Devops technologies.
+          </p>
         </div>
 
         <div class="about-boxes">
@@ -101,19 +98,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       <div class="about-card">
         <div class="timeline-item">
           <h4>BSc in Information Technology</h4>
-          University of Sri Jayewardenepura<br>
+          University of Sri Jayewardenepura<br />
           <small>2025 - Present</small>
         </div>
 
         <div class="timeline-item">
           <h4>G.C.E Advanced Level</h4>
-          Good Shepherd Convent Panadura<br>
+          Good Shepherd Convent Panadura<br />
           <small>Completed 2024</small>
         </div>
 
         <div class="timeline-item">
           <h4>English Course</h4>
-          University of Moratuwa <br>
+          University of Moratuwa <br />
           <small>Completed 2025</small>
         </div>
       </div>
@@ -148,104 +145,190 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     </section>
 
     <section id="projects">
-      <h2>Featured Projects</h2>
-
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Personal Portfolio Website</h3>
-          <br />
-          <p>
-            Experienced in building responsive and user-friendly websites using
-            modern frontend technologies. Skilled in creating attractive
-            interfaces and ensuring seamless user experiences across different
-            devices.
-          </p>
+      <div class="section-header">
+        <div class="title-group">
+          <h2>Projects</h2>
+          <p>Some of my recent works and learning projects.</p>
         </div>
 
-        <div class="project-card">
-          <h3>University Projects</h3>
-          <br />
-          <p>
-            Familiar with developing server-side applications, managing
-            databases, and creating secure APIs. Capable of handling data
-            storage, retrieval, and integration for dynamic web applications.
-          </p>
+        <div class="filter-tabs">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="web">Web</button>
+          <button data-filter="university">University</button>
+          <button data-filter="docker">Docker</button>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Portfolio -->
+
+        <div class="project-card featured" data-category="web">
+          <div class="card-content">
+            <div class="project-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+
+            <span class="project-badge">Featured</span>
+
+            <h3>Personal Portfolio Website</h3>
+
+            <p>
+              A responsive personal portfolio developed using HTML, CSS and
+              JavaScript with dark/light mode, smooth animations and a modern
+              UI.
+            </p>
+
+            <div class="tech-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="project-links">
+              <a href="https://github.com/shenuribuddika" target="_blank">
+                <i class="fab fa-github"></i> Code
+              </a>
+
+              <a href="#"> <i class="fas fa-external-link-alt"></i> Live </a>
+            </div>
+
+            <div class="project-status">
+              <span class="dot"></span>
+
+              In Progress
+            </div>
+          </div>
         </div>
 
-        <div class="project-card">
-          <h3>Docker Learning Projects</h3>
-          <br />
-          <p>
-            Proficient in using development tools, version control systems,
-            containerization platforms, and collaborative workflows to
-            streamline software development and deployment processes.
-          </p>
+        <!-- University -->
+
+        <div class="project-card" data-category="university">
+          <div class="card-content">
+            <div class="project-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+
+            <span class="project-badge">University</span>
+
+            <h3>University Projects</h3>
+
+            <p>
+              Academic projects developed during my Information Technology
+              degree, including programming, databases and software development.
+            </p>
+
+            <div class="tech-tags">
+              <span>Java</span>
+
+              <span>Python</span>
+
+              <span>SQL</span>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="project-links">
+              <a href="#"> <i class="fab fa-github"></i> Code </a>
+            </div>
+
+            <div class="project-status">
+              <span class="dot"></span>
+
+              Completed
+            </div>
+          </div>
+        </div>
+
+        <!-- Docker -->
+
+        <div class="project-card" data-category="docker">
+          <div class="card-content">
+            <div class="project-icon">
+              <i class="fab fa-docker"></i>
+            </div>
+
+            <span class="project-badge">Docker</span>
+
+            <h3>Docker Learning Projects</h3>
+
+            <p>
+              Practical Docker exercises including containerization, Docker
+              Compose and GitHub Actions CI/CD workflow practice.
+            </p>
+
+            <div class="tech-tags">
+              <span>Docker</span>
+
+              <span>GitHub</span>
+
+              <span>CI/CD</span>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="project-links">
+              <a href="#"> <i class="fab fa-github"></i> Code </a>
+            </div>
+
+            <div class="project-status">
+              <span class="dot"></span>
+
+              Learning
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="contact">
-
-    <div class="section-title">
-        
+      <div class="section-title">
         <h2>Let's Connect</h2>
         <p>
-            Feel free to contact me for collaboration, projects or any opportunities.
+          Feel free to contact me for collaboration, projects or any
+          opportunities.
         </p>
-    </div>
+      </div>
 
-    <div class="contact-grid">
-
+      <div class="contact-grid">
         <div class="contact-card">
-            <div class="icon-box">📧</div>
+          <div class="icon-box">📧</div>
 
-            <h3>Email</h3>
+          <h3>Email</h3>
 
-            <a href="mailto:shenuribuddika@gmail.com">
-                shenuribuddika@gmail.com
-            </a>
-
+          <a href="mailto:shenuribuddika@gmail.com">
+            shenuribuddika@gmail.com
+          </a>
         </div>
 
         <div class="contact-card">
+          <div class="icon-box">📱</div>
 
-            <div class="icon-box">📱</div>
+          <h3>Phone</h3>
 
-            <h3>Phone</h3>
-
-            <a href="tel:+94722621240">
-                +94 72 262 1240
-            </a>
-
+          <a href="tel:+94722621240"> +94 72 262 1240 </a>
         </div>
-
-    </div>
-
-</section>
+      </div>
+    </section>
 
     <footer>
-
-    <div class="footer-social">
-
+      <div class="footer-social">
         <a href="https://facebook.com/" target="_blank">
-            <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-facebook-f"></i>
         </a>
 
         <a href="https://instagram.com/" target="_blank">
-            <i class="fab fa-instagram"></i>
+          <i class="fab fa-instagram"></i>
         </a>
 
         <a href="https://github.com/shenuribuddika" target="_blank">
-            <i class="fab fa-github"></i>
+          <i class="fab fa-github"></i>
         </a>
+      </div>
 
-    </div>
-
-    <p>
-        © 2026 <strong>Shenuri Buddika</strong>. All Rights Reserved.
-    </p>
-
-</footer>
+      <p>© 2026 <strong>Shenuri Buddika</strong>. All Rights Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
